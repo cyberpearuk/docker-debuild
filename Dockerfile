@@ -6,6 +6,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     devscripts \
     fakeroot \
     debhelper \
+    git \
+    git-buildpackage \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
