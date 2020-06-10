@@ -8,9 +8,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     git \
     git-buildpackage \
     lintian \
+    sudo \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
 VOLUME /workspace
-
-CMD debuild
